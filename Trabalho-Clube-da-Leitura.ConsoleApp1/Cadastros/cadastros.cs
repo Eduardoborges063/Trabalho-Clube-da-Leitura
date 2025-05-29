@@ -7,50 +7,125 @@ using Trabalho_Clube_da_Leitura.ConsoleApp1.Módulo_de_Caixas;
 
 namespace Trabalho_Clube_da_Leitura.ConsoleApp1.Cadastros
 {
-    internal class cadastros
+    internal class cadastros( )
     {
-        public void TelaCadastrarUsuario()
+        public void TelaCadastrarUsuario(Menu TMenu)
         {
+            string nomeUsuario;
+            string nomeResponsavel;
+            string telefoneResponsavel;
+
             Console.Clear();
-            Console.WriteLine(" Vamos cadastrar Você.");
-            Console.WriteLine();
+            Console.WriteLine("----------------------------------------");
+            Console.WriteLine("|      Vamos cadastrar você.            |");
+            Console.WriteLine("----------------------------------------");
+           
             Console.WriteLine("Digite seu nome: ");
+            nomeUsuario = Console.ReadLine();
             Console.WriteLine();
+
             Console.WriteLine("Nome do responsável:");
+            nomeResponsavel = Console.ReadLine();
             Console.WriteLine();
+
             Console.WriteLine("Telefone:");
-        }
-        public void TelaCadastrarLivro()
-        {
+            telefoneResponsavel = Console.ReadLine();
+            Console.WriteLine();
+
+
+            Console.WriteLine("----------------------------------------");
+            Console.WriteLine(" cadastrada(a/o) com sucesso! ");
+            Console.WriteLine("----------------------------------------");
+            Console.ReadLine();
             Console.Clear();
-            Console.WriteLine(" Vamos cadastrar um livro.");
+            return;
+
+        }
+        public void TelaCadastrarLivro(Menu TMenu)
+        {
+            string nomeLivro;
+            int quantidadePaginas;
+            int anoPublicacao;
+
+            Console.Clear();
+            Console.WriteLine("----------------------------------------");
+            Console.WriteLine("|      Vamos cadastrar um livro.      |");
+            Console.WriteLine("----------------------------------------");
+
             Console.WriteLine();
             Console.WriteLine("Digite o nome do livro: ");
+            Console.ReadLine();
             Console.WriteLine();
+            Console.WriteLine("----------------------------------------");
+
             Console.WriteLine("Digite a quantidade de páginas: ");
+            Console.ReadLine();
             Console.WriteLine();
+            Console.WriteLine("----------------------------------------");
+
             Console.WriteLine("Ano de publicação: ");
+            Console.ReadLine();
+            Console.WriteLine();
+            Console.WriteLine("----------------------------------------");
+
             Console.WriteLine("Caixa(seleção obrigatória):");
             Console.WriteLine("Opções:drama, comédia, ficção científica, fantasia, terror, suspense, faroeste, romance e aventura");
+            Console.ReadLine();
+            Console.WriteLine("----------------------------------------");
 
-            Console.WriteLine();
-            
+
+            Console.WriteLine("----------------------------------------");
+            Console.WriteLine("Livro cadastrada com sucesso! ");
+            Console.WriteLine("----------------------------------------");
+            Console.ReadLine();
+            Console.Clear();
+            return;
         }
-        public void TelaCadastrarCaixa()
+        public void TelaCadastrarCaixa( Menu TMenu )
         {
-            Console.WriteLine("vamos cadastrar uma caixa:");
-            Console.WriteLine();
+
+
+            CadastrarCaixa();
+
+
+            Console.Clear();
+            Console.WriteLine("----------------------------------------");
+            Console.WriteLine("|      Vamos cadastrar uma caixa.      |");
+            Console.WriteLine("----------------------------------------");
+
+
             Console.WriteLine("Digite o nome da caixa: ");
+            Console.ReadLine();
             Console.WriteLine();
-            Console.WriteLine("Digite a quantidade de livros na caixa: ");
+            Console.WriteLine("----------------------------------------");
+
+            Console.WriteLine("Digite a quantidade de livros na caixa(10 livros por caixa): ");
+            Console.ReadLine();
             Console.WriteLine();
+            Console.WriteLine("----------------------------------------");
+
             Console.WriteLine("Digite o tipo de caixa: ");
             Console.WriteLine("Opções: drama, comédia, ficção científica, fantasia, terror, suspense, faroeste, romance e aventura");
+            Console.ReadLine();
             Console.WriteLine();
-            Console.WriteLine("Digite a Etiqueta(texto único, máximo 50 caracteres): ");
-            Console.WriteLine();
-            Console.WriteLine("Digite o prazo máximo para empréstimo de suas revistas(maximo 6 meses): ");
+            Console.WriteLine("----------------------------------------");
 
+            Console.WriteLine("Digite a Etiqueta(texto único, máximo 50 caracteres): ");
+            Console.ReadLine();
+            Console.WriteLine();
+            Console.WriteLine("----------------------------------------");
+
+            Console.WriteLine("Digite o prazo máximo para empréstimo de suas revistas(maximo 6 meses): ");
+            Console.ReadLine();
+            Console.WriteLine("----------------------------------------");
+
+
+            Console.WriteLine("----------------------------------------");
+            Console.WriteLine("caixa cadastrada com sucesso! ");
+            Console.WriteLine("----------------------------------------");
+            Console.ReadLine();
+            Console.Clear();
+            return;
         }
         public void CadastrarCaixa()
         {
@@ -58,12 +133,12 @@ namespace Trabalho_Clube_da_Leitura.ConsoleApp1.Cadastros
             Caixas caixas = new Caixas();
             Caixas OpcoesDeCaixa;
             OpcoesDeCaixa = new Caixas();
+          
             string nomeCaixa;
-            int quantidadeLivros;
+            int quantidadeLivros = 10; // Considerando 10 livros por caixa
             string tipoCaixa;
             string etiqueta;
             int prazoMaximoEmprestimo;
-
 
         }
     }

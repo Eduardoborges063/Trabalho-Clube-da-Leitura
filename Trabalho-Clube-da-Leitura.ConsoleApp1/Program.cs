@@ -2,9 +2,11 @@
 {
     private static void Main(string[] args)
     {
-        Console.Clear();
-        menu menu = new menu();
-       
+        while (true)
+        {
+            Menu menu = new Menu();
+            menu.TMenu();
+        }
     }
 }
 
