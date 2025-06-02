@@ -10,7 +10,11 @@ namespace Trabalho_Clube_da_Leitura.ConsoleApp1.Módulo_de_Caixas
     {
         public void OpcoesDeCaixa()
         {
-           Console.Clear();
+            Caixas caixas = new Caixas();
+            Caixas OpcoesDeCaixa;
+            OpcoesDeCaixa = new Caixas();
+          
+            Console.Clear();
             string drama;
             string comedia;
             string ficcaoCientifica;

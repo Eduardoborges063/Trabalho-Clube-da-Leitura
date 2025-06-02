@@ -49,10 +49,6 @@ namespace Trabalho_Clube_da_Leitura.ConsoleApp1.Cadastros
         }
         public void TelaCadastrarLivro(Menu TMenu)
         {
-            string nomeLivro;
-            int quantidadePaginas;
-            int anoPublicacao;
-
             Console.Clear();
             Console.WriteLine("----------------------------------------");
             Console.WriteLine("|      Vamos cadastrar um livro.      |");
