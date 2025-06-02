@@ -10,7 +10,6 @@
 
   <ItemGroup>
     <Folder Include="Módulo de Revistas\" />
-    <Folder Include="Módulo de Empréstimos\" />
   </ItemGroup>
 
 </Project>

@@ -7,9 +7,9 @@ using Trabalho_Clube_da_Leitura.ConsoleApp1.Módulo_de_Caixas;
 
 namespace Trabalho_Clube_da_Leitura.ConsoleApp1.Cadastros
 {
-    internal class cadastros( )
+    public class Cadastros
     {
-        public void TelaCadastrarUsuario(Menu TMenu)
+        public string TelaCadastrarUsuario(Menu TMenu)
         {
             string nomeUsuario;
             string nomeResponsavel;
@@ -19,7 +19,7 @@ namespace Trabalho_Clube_da_Leitura.ConsoleApp1.Cadastros
             Console.WriteLine("----------------------------------------");
             Console.WriteLine("|      Vamos cadastrar você.            |");
             Console.WriteLine("----------------------------------------");
-           
+
             Console.WriteLine("Digite seu nome: ");
             nomeUsuario = Console.ReadLine();
             Console.WriteLine();
@@ -38,8 +38,14 @@ namespace Trabalho_Clube_da_Leitura.ConsoleApp1.Cadastros
             Console.WriteLine("----------------------------------------");
             Console.ReadLine();
             Console.Clear();
-            return;
 
+          return nomeUsuario;
+        }
+        public void CadastrarUsuario()
+        {
+            string nomeUsuario;
+            string nomeResponsavel;
+            string telefoneResponsavel;
         }
         public void TelaCadastrarLivro(Menu TMenu)
         {
@@ -81,7 +87,14 @@ namespace Trabalho_Clube_da_Leitura.ConsoleApp1.Cadastros
             Console.Clear();
             return;
         }
-        public void TelaCadastrarCaixa( Menu TMenu )
+        public void CadastrarLivro()
+        {
+            string nomeLivro;
+            int quantidadePaginas;
+            int anoPublicacao;
+            string tipoCaixa;
+        }
+        public void TelaCadastrarCaixa(Menu TMenu)
         {
 
 
@@ -129,11 +142,10 @@ namespace Trabalho_Clube_da_Leitura.ConsoleApp1.Cadastros
         }
         public void CadastrarCaixa()
         {
-            Console.Clear();
             Caixas caixas = new Caixas();
             Caixas OpcoesDeCaixa;
             OpcoesDeCaixa = new Caixas();
-          
+
             string nomeCaixa;
             int quantidadeLivros = 10; // Considerando 10 livros por caixa
             string tipoCaixa;

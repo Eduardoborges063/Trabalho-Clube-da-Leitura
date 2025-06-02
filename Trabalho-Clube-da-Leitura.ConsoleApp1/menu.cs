@@ -1,4 +1,5 @@
 ﻿using Trabalho_Clube_da_Leitura.ConsoleApp1.Cadastros;
+using Trabalho_Clube_da_Leitura.ConsoleApp1.Módulo_de_Amigos;
 
 public class Menu()
 {
@@ -14,12 +15,13 @@ public class Menu()
         Console.WriteLine("1 - Cadastrar livro");
         Console.WriteLine("2 - fazer seu cadastro");
         Console.WriteLine("3 - cadastrar caixa");
-        Console.WriteLine("4 - Sair");
+        Console.WriteLine("4 - ");
+        Console.WriteLine("5 - Sair");
 
         Console.Write("\nDigite a opção desejada: ");
         Console.WriteLine("----------------------------------------");
         string opcao = Console.ReadLine();
-        cadastros cadastros = new cadastros();
+        Cadastros cadastros = new Cadastros();
         switch (opcao)
         {
 
@@ -36,7 +38,14 @@ public class Menu()
                 cadastros.TelaCadastrarCaixa(this);
                 break;
             case "4":
-                Console.WriteLine("Saindo...");
+                // Aqui você pode chamar a função de empréstimos, por exemplo:
+                // Empretimos emprestimos = new Empretimos();
+                // emprestimos.TelaEmprestarLivro();
+                Console.WriteLine("Opção de empréstimo ainda não implementada.");
+                break;
+            case "5":
+                    Console.WriteLine("Saindo...");
+                Environment.Exit(0);
                 break;
             default:
                 Console.WriteLine("Opção inválida. Tente novamente.");
